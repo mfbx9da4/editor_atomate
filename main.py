@@ -42,8 +42,10 @@ class CreateUnpublishedPosts(BaseHandler):
         self.render('create_unpublished_posts.html')
 
     def post(self):
-        data = self.request.get('data')
         access_token = self.request.get('access_token')
+        data = self.request.get('data')
+        logging.error(access_token)
+        logging.error(data)
         self.render('unpublished_post_ids.html', ids=postUnpublishedPosts(access_token, data))
 
 application = webapp2.WSGIApplication([

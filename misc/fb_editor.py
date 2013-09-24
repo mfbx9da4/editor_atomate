@@ -48,11 +48,13 @@ def postUnpublishedPosts(access_token, data):
 		'Description' : 'description',
 		'Description' : 'description',
 		'Picture' : 'picture',
-		'Picture\r' : 'picture',
+		'Picture\r' : 'picture'
 	}
 	postIds = []
 	all_rows = data.split('\n')
 	header = all_rows[0].split('\t')
+	logging.error(data)
+	logging.error(header)
 	header = [map_data_to_post[x] for x in header]
 	rows = all_rows[1:]
 	for row in rows:
