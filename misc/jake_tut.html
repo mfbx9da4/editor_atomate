@@ -1,0 +1,31 @@
+<style>
+.box
+{
+	width: 200px;
+	height:200px;
+}
+#box1
+{
+	background-color: crimson;
+	z-index: 100;
+	position: relative;
+}
+#box2
+{
+	z-index: 0;
+	-webkit-transition: all 1s;
+	position: relative;
+	background-color: gold;
+	top: -200px;
+}
+	#box1:hover ~ #box2
+	{
+		top:0px;
+		/*opacity: 1;*/
+	}
+
+</style>
+<div id="container">
+	<div id="box1" class="box"></div>
+	<div id="box2" class="box"></div>
+</div>

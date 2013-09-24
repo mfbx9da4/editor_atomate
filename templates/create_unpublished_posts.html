@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+
+  <title></title>
+</head>
+<style type="text/css">
+	#submit
+	{
+		position: fixed;
+		left: 50%
+	}
+	.required
+	{
+		color: darkred;
+	}
+	#token
+	{
+		font-size: 1.4em;
+	}
+
+</style>
+<body>
+	<table>
+		<tbody>
+  <form action="/unpublished_posts" method="post">
+  	<tr>
+	    <td>
+	    	<span class="required" >*</span>
+	    </td>
+	    <td>
+		    <input placeholder="Paste access token here" class="required" name="access_token" input="text" id="token" value="" /> 
+	    </td>
+	</tr>
+	<tr>
+		<td>
+			<span class="required" >*</span>
+		</td>
+		<td>
+		    <textarea class="required" rows="30" cols="500" name="URLs" type="text" placeholder="Paste excel data here"></textarea> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input id="submit" type="submit" />
+		</td>
+	</tr>
+  </form>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,15 @@
+application: sp-utilities
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: main.application
+- url: /style
+  static_dir: static/style
+
+libraries:
+- name: jinja2
+  version: latest

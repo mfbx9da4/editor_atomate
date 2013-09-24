@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="generator" content=
+    "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+    <style type="text/css">
+    body
+    {
+    	overflow: hidden;
+    }
+    #container
+    {
+    	width:1900px;
+    	height: 650px;
+    	margin: 0 auto;
+    	background-color: peachpuff;
+    }
+    .box
+    {
+        width: 200px;
+        height:200px;
+        display: inline-block;
+        position: relative;
+    }
+    #box1
+    {
+        background-color: crimson;
+        -webkit-transition: all 1s;
+
+    }
+        #box1:hover
+        {
+            width: 100%;
+            height: 100%;
+        }
+        #box1:hover #sub-box3
+        {
+            opacity: 1;
+        }
+
+    #box2
+    {
+        background-color: gold;
+    }
+    #box3
+    {
+        background-color: skyblue;
+    }
+    #box4
+    {
+        -webkit-transition: all 1s;
+        background-color: darkolivegreen;
+    }
+        #box4:hover
+        {
+        	top:-220px;
+        	left:-220px;
+            width: 1000px;
+            height: 700px;
+        }
+        #box4:hover .sub-box4
+        {
+        	position: absolute;
+        	top: 220px;
+        	left: 220px;
+            opacity: 1;
+        }
+    .sub-box
+    {
+        width: 160px;
+        height: 65px;
+        background-color: greenyellow;
+        position: absolute;
+        left:20px;
+        top:20px;
+        display: inline-block;
+    }
+    	#sub-box1
+    	{
+    	}
+    	#sub-box2
+    	{
+    		top: 105px;
+    	}
+    	#sub-box3
+    	{
+    		opacity: 0;
+    		left: 200px;
+    		transition-property:all;
+			transition-duration:1s;
+			transition-delay:1s;
+    	}
+    .sub-box4
+    {
+        width: 160px;
+        height: 65px;
+        background-color: greenyellow;
+        position: absolute;
+        left:20px;
+        top:20px;
+        display: inline-block;
+    }
+    	#sub-box4
+    	{
+    	}
+    	#sub-box5
+    	{
+    		top: 105px;
+    	}
+    	#sub-box6
+    	{
+    		opacity: 0;
+    		left: 200px;
+    		transition-property:all;
+			transition-duration:1s;
+			transition-delay:1s;
+    	}
+
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <title></title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="box1" class="box">
+            <div id="sub-box1" class="sub-box">1</div>
+
+            <div id="sub-box2" class="sub-box">2</div>
+
+            <div id="sub-box3" class="sub-box">3</div>
+        </div>
+
+        <div id="box2" class="box"></div><br />
+
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box">
+        	<div id="sub-box4" class="sub-box4">1</div>
+
+            <div id="sub-box5" class="sub-box4">2</div>
+
+            <div id="sub-box6" class="sub-box4">3</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" defer>
+    // $('.sub-box').each(function (i)
+    // {
+    // 	this.style.left= (i * 80) + 20  + "px";
+    // });
+    </script>
+</body>
+</html>

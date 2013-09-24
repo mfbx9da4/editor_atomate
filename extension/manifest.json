@@ -1,0 +1,18 @@
+{
+  "name": "Get requests",
+  "version": "1.0",
+  "minimum_chrome_version": "10.0",
+  "description": "Extends NOTHING",
+  "devtools_page": "devtools.html",
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "devtools.html"},
+  "manifest_version": 2
+}
